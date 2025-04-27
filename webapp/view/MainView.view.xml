@@ -1,9 +1,31 @@
-<mvc:View controllerName="logaligroup.invoices.controller.MainView"
+<mvc:View
+    controllerName="logaligroup.invoices.controller.MainView"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-    <content>
-    <Text text="Bienvenido Harold a SAP Fiori" ></Text>
-    </content>
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <Panel headerText="{i18n>selectionScreen}">
+                <Label
+                    id="labelShipName"
+                    labelFor="shipName"
+                    text="{i18n>shipName}"
+                    class="sapUiSmallMargin"
+                />
+                <Input
+                    id="shipName"
+                    width="200px"
+                    class="sapUiSmallMarginEnd"
+                />
+                <Label
+                    id="labelCountry"
+                    text="{i18n>country}"
+                    class="sapUiSmallMargin"
+                />
+            </Panel>
+        </content>
     </Page>
 </mvc:View>

@@ -4,7 +4,7 @@ sap.ui.define([
     "use strict";
 
     return Controller.extend("logaligroup.invoices.controller.MainView", {
-        onInit() {
+        onInit: function () {
         }
     });
 });
